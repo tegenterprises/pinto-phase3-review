@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Pinto Chiropractic · Phase 3 Reactivation Campaign · Review draft (Oct 8, 2026)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f8f9; --card:#ffffff; --ink:#1d2b33; --muted:#5a6b74; --line:#dbe4e8;
+  --brand:#1f5f7a; --brand-2:#2f8a8a; --brand-soft:#e6f2f3; --accent:#c9822b;
+  --ok:#2e7d4f; --ok-soft:#e5f4ea; --warn:#a8650f; --warn-soft:#fbf0de; --disc:#3d5fa8; --disc-soft:#e7edf9;
+  --new:#7a3fa0; --new-soft:#f3eaf8;
+  --sans:"Inter",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--brand)}
+a:hover{color:var(--brand-2)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 28px}
+
+/* Header */
+header.hero{background:linear-gradient(135deg,#17485d 0%,#1f5f7a 55%,#2f8a8a 100%);color:#fff;padding:44px 0 40px}
+.hero .eyebrow{font-size:14px;letter-spacing:.12em;text-transform:uppercase;opacity:.85;font-weight:600}
+.hero h1{font-family:var(--serif);font-weight:600;font-size:40px;line-height:1.2;margin:10px 0 8px}
+.hero .sub{font-size:20px;opacity:.95;margin:0}
+.hero-meta{display:flex;flex-wrap:wrap;gap:10px 14px;margin-top:22px;align-items:center}
+.pill{display:inline-flex;align-items:center;gap:8px;border-radius:999px;padding:6px 14px;font-size:15px;font-weight:600}
+.pill.light{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);color:#fff}
+.pill.status{background:#fff4e0;color:#7a4a08;border:1px solid #f1d39e}
+.dot{width:9px;height:9px;border-radius:50%;background:currentColor;display:inline-block}
+
+/* Nav */
+nav.secnav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-filter:saturate(1.4) blur(6px);border-bottom:1px solid var(--line);box-shadow:0 2px 10px rgba(20,50,60,.05)}
+nav.secnav .wrap{display:flex;gap:4px;overflow-x:auto;padding-top:10px;padding-bottom:10px;scrollbar-width:thin}
+nav.secnav a{white-space:nowrap;text-decoration:none;color:var(--muted);font-size:15px;font-weight:600;padding:7px 12px;border-radius:8px}
+nav.secnav a:hover{background:var(--brand-soft);color:var(--brand)}
+nav.secnav a.active{background:var(--brand);color:#fff}
+
+/* Sections */
+section{padding:46px 0 10px}
+section > .wrap > h2{font-family:var(--serif);font-weight:600;font-size:30px;margin:0 0 6px;color:#16394a;display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.secnum{font-family:var(--sans);font-size:14px;font-weight:700;color:var(--brand-2);letter-spacing:.08em;text-transform:uppercase}
+.lede{color:var(--muted);margin:0 0 22px;font-size:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px 28px;box-shadow:0 1px 3px rgba(20,50,60,.04)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+h3{font-size:20px;margin:0 0 10px;color:#16394a}
+.muted{color:var(--muted)}
+.small{font-size:15px}
+ul.clean{margin:0;padding-left:22px}
+ul.clean li{margin:6px 0}
+
+.quote{font-family:var(--serif);font-size:28px;line-height:1.4;color:#16394a;border-left:5px solid var(--brand-2);padding:6px 0 6px 22px;margin:4px 0 14px}
+.quote-attr{font-size:15px;color:var(--muted);margin-left:27px}
+.stat{background:var(--brand-soft);border-radius:12px;padding:18px 20px}
+.stat .n{font-family:var(--serif);font-size:38px;font-weight:600;color:var(--brand);line-height:1.1}
+.stat .l{font-size:15px;color:#2b4652;margin-top:4px}
+.callout{border-radius:12px;padding:14px 18px;font-size:16px;margin-top:16px}
+.callout.info{background:var(--brand-soft);border:1px solid #c6e0e3}
+.callout.warn{background:var(--warn-soft);border:1px solid #efd5a8}
+.callout.privacy{background:#f2f5f7;border:1px dashed #b9c7ce}
+.tag{display:inline-block;font-size:12.5px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;border-radius:6px;padding:3px 8px;vertical-align:middle}
+.tag.new{background:var(--new-soft);color:var(--new);border:1px solid #dcc6ea}
+.tag.email{background:var(--brand-soft);color:var(--brand)}
+.tag.text{background:var(--new-soft);color:var(--new)}
+.tag.call{background:var(--warn-soft);color:var(--warn)}
+
+/* Timeline */
+.timeline{position:relative;padding:8px 0 0}
+.track{position:relative;height:78px;margin:0 24px}
+.track .bar{position:absolute;left:0;right:0;top:36px;height:6px;border-radius:3px;background:linear-gradient(90deg,var(--brand) 0%,var(--brand-2) 100%)}
+.track .tick{position:absolute;top:30px;width:2px;height:18px;background:#b8ccd3;transform:translateX(-1px)}
+.track .daylbl{position:absolute;top:54px;font-size:12px;white-space:nowrap;color:var(--muted);transform:translateX(-50%)}
+.track .node{position:absolute;top:22px;width:34px;height:34px;border-radius:50%;transform:translateX(-50%);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff;border:3px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.2)}
+.node.e{background:var(--brand)}
+.node.t{background:var(--new)}
+.node.stop{background:#8a99a0;width:auto;padding:0 10px;border-radius:999px;font-size:12px}
+.tl-cards{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:18px}
+.tl-card{background:#fff;border:1px solid var(--line);border-top:4px solid var(--brand);border-radius:10px;padding:12px 13px;font-size:15px;line-height:1.45}
+.tl-card.t{border-top-color:var(--new)}
+.tl-card .d{font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.tl-card .w{font-weight:700;margin:4px 0 2px;color:#16394a}
+.tl-card .f{color:var(--muted);font-size:14px}
+.tl-card .call{margin-top:8px;font-size:13.5px;background:var(--warn-soft);color:#6e420a;border-radius:6px;padding:5px 8px;font-weight:600}
+.rules{display:flex;gap:12px;flex-wrap:wrap;margin-top:18px}
+.rule{flex:1 1 260px;background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 16px;font-size:16px}
+.rule b{color:#16394a}
+
+/* Merge field chip */
+.mf{background:#fff3c4;color:#5b4300;border:1px solid #e9cf6a;border-radius:5px;padding:0 5px;font-weight:600;white-space:nowrap;cursor:help}
+body.raw .mf{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:.88em;background:#fde9d2;border-color:#e7b77a;color:#6a3a00}
+.toolbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin-bottom:22px;font-size:16px}
+.switch{display:inline-flex;align-items:center;gap:10px;cursor:pointer;font-weight:600;user-select:none}
+.switch input{position:absolute;opacity:0;pointer-events:none}
+.switch .sl{width:46px;height:26px;border-radius:13px;background:#c4d0d5;position:relative;transition:.2s}
+.switch .sl::after{content:"";position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;transition:.2s;box-shadow:0 1px 2px rgba(0,0,0,.25)}
+.switch input:checked + .sl{background:var(--brand)}
+.switch input:checked + .sl::after{left:23px}
+.switch input:focus-visible + .sl{outline:3px solid #9fd0d6;outline-offset:2px}
+
+/* Email card */
+.email{background:#fff;border:1px solid var(--line);border-radius:16px;margin:0 0 30px;overflow:hidden;box-shadow:0 2px 10px rgba(20,50,60,.05)}
+.email-top{display:flex;justify-content:space-between;align-items:center;gap:12px;background:#f0f5f7;border-bottom:1px solid var(--line);padding:10px 20px;font-size:14px;color:var(--muted);font-weight:600}
+.email-top .lbl{color:#16394a;font-size:15px}
+.inbox-row{display:grid;grid-template-columns:auto 1fr auto;gap:14px;align-items:center;padding:14px 20px;border-bottom:1px solid var(--line);background:#fbfdfd}
+.inbox-row .from{font-weight:700;max-width:230px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:16px}
+.inbox-row .subj{overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:16px}
+.inbox-row .subj b{font-weight:600}
+.inbox-row .subj span.pv{color:var(--muted)}
+.inbox-row .time{font-size:14px;color:var(--muted);white-space:nowrap}
+.inbox-cap{font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:#8a9aa2;padding:8px 20px 0;background:#fbfdfd;font-weight:700}
+.msg-head{padding:20px 28px 6px}
+.msg-subject{font-size:24px;font-weight:600;margin:0 0 14px;line-height:1.35;color:#14303d}
+.sender{display:flex;gap:14px;align-items:center}
+.avatar{width:44px;height:44px;border-radius:50%;background:var(--brand);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;flex:none}
+.avatar.dr{background:#2f8a8a}
+.sender .nm{font-weight:700;font-size:17px}
+.sender .ad{font-size:14px;color:var(--muted)}
+.preview-line{margin:14px 0 0;font-size:15px;color:var(--muted);background:#f6f8f9;border-radius:8px;padding:8px 12px}
+.preview-line b{color:#41545d;font-weight:600}
+.msg-body{padding:10px 28px 6px;max-width:700px;font-family:Arial,Helvetica,sans-serif;font-size:17px;line-height:1.6;color:#222}
+.msg-body p{margin:0 0 15px}
+.msg-body .sig{margin-top:6px}
+.msg-foot{margin:8px 28px 22px;padding-top:14px;border-top:1px solid #e3e3e3;font-family:Arial,Helvetica,sans-serif;font-size:13px;color:#666;max-width:644px}
+.msg-foot .unsub{display:block;margin-top:6px;color:#8a8a8a;font-style:italic}
+.legend{font-size:14px;color:var(--muted)}
+
+/* SMS */
+.sms-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.phone{background:#fff;border:1px solid var(--line);border-radius:28px;padding:14px;box-shadow:0 4px 16px rgba(20,50,60,.08)}
+.phone-screen{background:#f4f6f8;border-radius:20px;overflow:hidden;border:1px solid #e3e8eb}
+.phone-head{background:#fff;border-bottom:1px solid #e5e9ec;text-align:center;padding:12px 10px 10px}
+.phone-head .av{width:40px;height:40px;border-radius:50%;background:#9aa9b1;color:#fff;margin:0 auto 4px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:15px}
+.phone-head .nm{font-weight:700;font-size:15px}
+.phone-head .nb{font-size:12.5px;color:var(--muted)}
+.phone-body{padding:16px 14px 18px;min-height:250px}
+.ts{text-align:center;font-size:12px;color:#8a99a0;margin-bottom:10px;font-weight:600}
+.bubble{background:#e5e8eb;color:#111;border-radius:20px 20px 20px 6px;padding:11px 15px;font-size:16.5px;line-height:1.45;max-width:92%;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+.bubble a{color:#0a63c9}
+.sms-meta{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;margin:14px 4px 2px;font-size:14.5px;color:var(--muted)}
+.sms-meta b{color:#16394a}
+.sms-title{display:flex;align-items:center;gap:10px;margin:0 4px 12px;flex-wrap:wrap}
+.sms-title h3{margin:0}
+
+/* Tables */
+table.t{width:100%;border-collapse:collapse;font-size:16px;background:#fff}
+table.t th,table.t td{border-bottom:1px solid var(--line);padding:10px 12px;text-align:left;vertical-align:top}
+table.t th{background:#eef4f6;font-size:14px;letter-spacing:.03em;text-transform:uppercase;color:#3b5560}
+table.t tr.hl td{background:#f2f9f6}
+table.t td.y{color:var(--ok);font-weight:600}
+table.t.terms td:first-child{color:var(--ok);font-weight:600}
+table.t.terms td:last-child{color:#9a3b2b}
+.tablewrap{border:1px solid var(--line);border-radius:12px;overflow:hidden;overflow-x:auto}
+.script{font-family:var(--serif);font-size:23px;line-height:1.5;color:#16394a;background:var(--brand-soft);border-radius:12px;padding:20px 24px;margin:12px 0}
+.wording li{margin:10px 0;background:#fff;border:1px solid var(--line);border-radius:10px;padding:12px 16px;list-style:none}
+.wording{padding:0;margin:0}
+.wording .when{display:block;font-size:14px;color:var(--muted);margin-top:4px}
+
+/* Decisions */
+.dec-head{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.progress{font-weight:600;color:#16394a}
+.progress .bar{display:inline-block;width:160px;height:10px;background:#e1e9ec;border-radius:5px;vertical-align:middle;margin-left:10px;overflow:hidden}
+.progress .bar i{display:block;height:100%;width:0;background:var(--ok);transition:width .25s}
+.btn{font:inherit;font-size:16px;font-weight:600;border-radius:10px;padding:10px 18px;border:1px solid var(--brand);background:var(--brand);color:#fff;cursor:pointer}
+.btn:hover{background:#174b61}
+.btn.ghost{background:#fff;color:var(--brand)}
+.btn.ghost:hover{background:var(--brand-soft)}
+.btn.quiet{background:#fff;color:var(--muted);border-color:var(--line)}
+.dec{background:#fff;border:1px solid var(--line);border-left:6px solid #cfd9dd;border-radius:12px;padding:16px 20px;margin-bottom:14px}
+.dec.s-approved{border-left-color:var(--ok)}
+.dec.s-change{border-left-color:var(--warn)}
+.dec.s-discuss{border-left-color:var(--disc)}
+.dec-row{display:flex;justify-content:space-between;gap:14px;align-items:flex-start;flex-wrap:wrap}
+.dec-q{font-weight:600;font-size:18px;color:#16394a;flex:1 1 380px}
+.dec-q .hint{display:block;font-weight:400;font-size:15px;color:var(--muted);margin-top:2px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:10px;overflow:hidden;flex:none}
+.seg button{font:inherit;font-size:15px;font-weight:600;padding:8px 14px;border:0;background:#fff;color:var(--muted);cursor:pointer;border-right:1px solid var(--line)}
+.seg button:last-child{border-right:0}
+.seg button:hover{background:#f3f7f8}
+.seg button[aria-pressed="true"].approved{background:var(--ok);color:#fff}
+.seg button[aria-pressed="true"].change{background:var(--warn);color:#fff}
+.seg button[aria-pressed="true"].discuss{background:var(--disc);color:#fff}
+.dec-extra{margin-top:10px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:16px}
+.dec-extra input{font:inherit;font-size:16px;padding:7px 10px;border:1px solid #c5d2d8;border-radius:8px;min-width:300px}
+.dec textarea{width:100%;margin-top:10px;font:inherit;font-size:16px;line-height:1.5;padding:10px 12px;border:1px solid #c5d2d8;border-radius:8px;min-height:54px;resize:vertical;background:#fcfdfd}
+.dec textarea:focus,.dec-extra input:focus{outline:3px solid #b9e0e4;border-color:var(--brand-2)}
+.print-notes{display:none}
+.toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(20px);background:#16394a;color:#fff;padding:12px 20px;border-radius:10px;font-weight:600;opacity:0;transition:.25s;pointer-events:none;z-index:100}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+/* Next steps */
+ol.steps{counter-reset:s;list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+ol.steps li{counter-increment:s;background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px;position:relative}
+ol.steps li::before{content:counter(s);display:flex;width:36px;height:36px;border-radius:50%;background:var(--brand);color:#fff;font-weight:700;align-items:center;justify-content:center;margin-bottom:10px}
+ol.steps li b{display:block;color:#16394a;margin-bottom:4px}
+footer.foot{margin-top:50px;padding:26px 0 40px;border-top:1px solid var(--line);color:var(--muted);font-size:15px}
+
+@media screen and (max-width:900px){
+  .grid2,.grid3,.sms-grid,ol.steps{grid-template-columns:1fr}
+  .tl-cards{grid-template-columns:repeat(2,1fr)}
+  .hero h1{font-size:32px}
+  .inbox-row{grid-template-columns:1fr}
+}
+
+/* Print */
+@media print{
+  @page{margin:14mm 12mm}
+  body{background:#fff;font-size:11.5pt;line-height:1.45}
+  nav.secnav,.toolbar,.no-print,.toast,.btn{display:none !important}
+  header.hero{background:#fff !important;color:#14303d;padding:0 0 12px;border-bottom:2px solid #1f5f7a}
+  .hero .pill.light{color:#14303d;border-color:#9fb3bb;background:#fff}
+  .hero h1{font-size:22pt}
+  section{padding:18px 0 0;break-inside:auto}
+  section > .wrap > h2{font-size:17pt;break-after:avoid}
+  .wrap{max-width:none;padding:0}
+  .card,.email,.phone,.dec,.tl-card,.rule,ol.steps li,.stat{box-shadow:none !important;break-inside:avoid}
+  .email{break-inside:auto}
+  .msg-head,.inbox-row{break-inside:avoid}
+  .msg-body p{break-inside:avoid}
+  .tl-cards{grid-template-columns:repeat(6,1fr);gap:6px}
+  .tl-card{font-size:9pt;padding:8px}
+  .track{margin:0 14px}
+  .stat .n{font-size:20pt}
+  .quote{font-size:16pt}
+  .script{font-size:14pt}
+  table.t{font-size:9.5pt}
+  table.t th,table.t td{padding:5px 7px}
+  .sms-grid{grid-template-columns:1fr 1fr}
+  .grid2{grid-template-columns:1fr 1fr}
+  a{color:#14303d;text-decoration:underline}
+  .src-url::after{content:" (" attr(href) ")";font-size:8.5pt;color:#555;word-break:break-all}
+  .seg button{display:none}
+  .seg button[aria-pressed="true"]{display:inline-block;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .dec textarea{display:none}
+  .print-notes{display:block;white-space:pre-wrap;border:1px solid #ccc;border-radius:6px;padding:6px 10px;margin-top:8px;min-height:36px}
+  .print-notes:empty::before{content:"Notes: ________________________________________________";color:#999}
+  .mf,.track .node,.track .bar,.tag,.pill.status{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+}
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div class="eyebrow">Pinto Chiropractic · Greenwood Village, CO</div>
+    <h1>Phase 3 — Functional Longevity Reactivation Campaign</h1>
+    <p class="sub">Review draft, Oct 8, 2026</p>
+    <div class="hero-meta">
+      <span class="pill light">Prepared by Mindful Edge</span>
+      <span class="pill light">For: Brenda (Business Administrator) &amp; Tim Bennett</span>
+      <span class="pill status"><span class="dot"></span>Status: Draft — nothing built or sent</span>
+    </div>
+  </div>
+</header>
+
+<nav class="secnav" aria-label="Sections">
+  <div class="wrap">
+    <a href="#purpose">Purpose</a>
+    <a href="#brenda">Brenda’s Notes</a>
+    <a href="#audience">Audience</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#emails">4 Emails</a>
+    <a href="#texts">2 Texts <span class="tag new" style="font-size:10px;padding:1px 5px;margin-left:2px">New</span></a>
+    <a href="#erin">Erin &amp; Wording</a>
+    <a href="#claim">Colorado Claim</a>
+    <a href="#decisions">Decisions</a>
+    <a href="#next">Next Steps</a>
+  </div>
+</nav>
+
+<main>
+
+<!-- 1. PURPOSE -->
+<section id="purpose">
+  <div class="wrap">
+    <h2><span class="secnum">01</span>Purpose &amp; core message</h2>
+    <p class="lede">Reconnect former DRX patients who have fallen out of their recommended periodic care, introduce the new Phase 3 — Functional Longevity concept naturally, and encourage them to keep protecting the progress they already made.</p>
+    <div class="card">
+      <div class="quote">“You already did the hard work. Now let us help you protect the progress you made.”</div>
+      <div class="quote-attr">Core reactivation message — Brenda</div>
+      <p class="small muted" style="margin:12px 0 0">Brenda: “This is the emotional and clinical center of the campaign. It recognizes the patient’s prior commitment, reinforces the value of what they accomplished, and gives them a reason to continue care without offering a monetary incentive.”</p>
+      <div class="grid3" style="margin-top:22px">
+        <div class="stat"><div class="n">No offers</div><div class="l">No discounts, coupons, or sales pressure. The reason to return is protecting their progress.</div></div>
+        <div class="stat"><div class="n">One CTA</div><div class="l">Call Erin at <a href="tel:+17204856894">(720) 485-6894</a> to schedule the next DRX visit.</div></div>
+        <div class="stat"><div class="n">18 days</div><div class="l">4 emails + 2 texts, plus Erin's follow-up calls (proposed), then the sequence stops.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRENDA NOTES -->
+<section id="brenda">
+  <div class="wrap">
+    <h2><span class="secnum">02</span>Brenda’s notes, point by point</h2>
+    <p class="lede">Every strategy and implementation note from Brenda’s doc (“DRX Phase 3 Reactivation Campaign 10.7.26”) and where it’s handled.</p>
+    <div class="card" style="padding:0;overflow:hidden">
+      <table class="t">
+        <thead><tr><th>Brenda asked for</th><th>How it’s handled</th><th>Status</th></tr></thead>
+        <tbody>
+<tr><td>No discounting; the hook is clinical continuity</td><td>No offers, coupons, or prices in any email or text. Core message is front and center.</td><td style="white-space:nowrap">✅ Covered</td></tr>
+<tr><td>Don’t lead with unfamiliar terms; explain the idea first, then name it Phase 3</td><td>Email 1 explains periodic care before naming Phase 3 — Functional Longevity. Texts mention Phase 3 only after Email 1 has gone out.</td><td style="white-space:nowrap">✅ Covered</td></tr>
+<tr><td>Shift away from “maintenance”</td><td>“Maintenance” and “tune-up” appear nowhere in the emails or texts. Her terminology table is in section 07.</td><td style="white-space:nowrap">✅ Covered</td></tr>
+<tr><td>Don’t make pain the only reason to return; reach patients who feel good</td><td>Email 3 is written for the patient who feels fine. Text 2 opens with “Feeling good?”</td><td style="white-space:nowrap">✅ Covered</td></tr>
+<tr><td>Don’t make it sound like another big treatment plan</td><td>Email 2: “nothing complicated about getting started again.” Erin’s script: “at the interval that makes sense for you.”</td><td style="white-space:nowrap">✅ Covered</td></tr>
+<tr><td>Keep the tone patient-centered, not a promotion</td><td>Her copy is used word for word. The texts follow the same tone with no sales language.</td><td style="white-space:nowrap">✅ Covered</td></tr>
+<tr><td>One consistent CTA: call Erin to schedule the next DRX visit; avoid “come in for a consultation”</td><td>Every email ends with her call-Erin sentence. “Consultation” is never used. The texts also say call Erin, and add “or just reply here,” which is new.</td><td style="white-space:nowrap">🟡 Confirm today</td></tr>
+<tr><td>Progression: check-in → Dr. Pinto’s clinical purpose → “I feel fine” → personal final check-in, no “last chance”</td><td>Emails 1–4 follow this order exactly (see section 05).</td><td style="white-space:nowrap">✅ Covered</td></tr>
+<tr><td>Seasonality is secondary; save winter, travel, shoveling for future campaigns</td><td>No seasonal reasons in any message. Noted for future campaigns.</td><td style="white-space:nowrap">✅ Covered</td></tr>
+<tr><td>Avoid unsupported exclusivity claims about the DRX 9000c</td><td>Removed from every email and text. The claim was researched (section 08).</td><td style="white-space:nowrap">✅ Covered</td></tr>
+<tr><td>Erin uses the same language; never call it a promotion, coupon, or special offer</td><td>Her phone script and that guidance are in section 07.</td><td style="white-space:nowrap">✅ Covered</td></tr>
+<tr><td>Terminology: prefer / avoid table</td><td>Included in section 07 and applied to the texts.</td><td style="white-space:nowrap">✅ Covered</td></tr>
+<tr><td>Use first name in subject lines selectively</td><td>First name is in the Email 1 and Email 4 subjects only, as she set them.</td><td style="white-space:nowrap">✅ Covered</td></tr>
+<tr><td>Clickable phone number (tel:7204856894)</td><td>Every number in the emails is tap-to-call and dials (720) 485-6894.</td><td style="white-space:nowrap">✅ Covered</td></tr>
+<tr><td>Stop after the 18-day sequence; later periodic reactivation cycle if clinically appropriate</td><td>Sequence stops on Day 18. Non-responders are tagged so a later cycle is easy. When to run it is on the decision list.</td><td style="white-space:nowrap">🟡 Confirm today</td></tr>
+<tr><td>Campaign purpose, subjects, sender names, Day 1/5/11/18 timing</td><td>All used exactly as written (sections 01, 04, 05).</td><td style="white-space:nowrap">✅ Covered</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout warn">
+      <b>Added beyond Brenda’s doc, for her OK:</b>
+      <ul class="clean" style="margin-top:8px"><li><b>Two texts</b> (Day 3 and Day 14) from the GoHighLevel texting number, for patients with text permission.</li><li><b>Erin’s follow-up calls</b> after Email 1 and Email 4, carried over from the original plan. Her doc doesn’t mention outbound calls.</li><li><b>Preview text</b> for each email, built only from lines in her copy.</li><li><b>Footer</b> with the practice address and phone, plus GoHighLevel’s required unsubscribe link.</li><li><b>One typo fix</b> in Email 3: “we bases” → “we base”.</li><li><b>Merge-field fallback</b>: if a first name is missing, the greeting reads “Hi there”.</li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- 2. AUDIENCE -->
+<section id="audience">
+  <div class="wrap">
+    <h2><span class="secnum">03</span>Audience</h2>
+    <div class="grid2">
+      <div class="card">
+        <h3>Who receives it</h3>
+        <ul class="clean">
+          <li><b>Past DRX 9000c patients</b>: the <b>37</b> patients on Brenda's list.</li>
+          <li>Last DRX visit between <b>January and June 2026</b>.</li>
+          <li><b>Emails</b> go to all 37. <b>Texts</b> go only to patients with text permission on file.</li>
+          <li>Anyone who replies or books an appointment is <b>removed automatically</b>.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>What they've already heard</h3>
+        <p style="margin:0 0 10px">These patients haven't heard “Phase 3” or “Functional Longevity” before. Each email explains the idea first and then names it.</p>
+        <div class="callout privacy small" style="margin-top:8px">🔒 This page has no patient names or contact details. “Margaret” in the previews is a sample name that shows where the merge field goes.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3. TIMELINE -->
+<section id="timeline">
+  <div class="wrap">
+    <h2><span class="secnum">04</span>18-day timeline</h2>
+    <p class="lede">The sequence runs automatically in GoHighLevel. Every message points to the same action: call Erin.</p>
+    <div class="card timeline">
+      <div class="track" id="track" aria-hidden="true"><div class="bar"></div></div>
+      <div class="tl-cards">
+        <div class="tl-card"><div class="d">Day 1</div><div class="w"><span class="tag email">Email 1</span></div><div class="f">From: Pinto Chiropractic</div><div class="call">☎ Erin call task (proposed)</div></div>
+        <div class="tl-card t"><div class="d">Day 3</div><div class="w"><span class="tag text">Text 1</span></div><div class="f">From: GHL texting number</div></div>
+        <div class="tl-card"><div class="d">Day 5</div><div class="w"><span class="tag email">Email 2</span></div><div class="f">From: Glenn Pinto, D.C.</div></div>
+        <div class="tl-card"><div class="d">Day 11</div><div class="w"><span class="tag email">Email 3</span></div><div class="f">From: Pinto Chiropractic</div></div>
+        <div class="tl-card t"><div class="d">Day 14</div><div class="w"><span class="tag text">Text 2</span></div><div class="f">From: GHL texting number</div></div>
+        <div class="tl-card"><div class="d">Day 18</div><div class="w"><span class="tag email">Email 4</span></div><div class="f">From: Glenn Pinto, D.C. and the Team at Pinto Chiropractic</div><div class="call">☎ Erin final call task (proposed)</div></div>
+      </div>
+      <div class="rules">
+        <div class="rule">✅ <b>Replies or books?</b> The patient is removed from the sequence automatically.</div>
+        <div class="rule">⏹ <b>Stop after Day 18.</b> No more messages. Non-responders can join a later periodic reactivation cycle if that's clinically appropriate.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4. EMAILS -->
+<section id="emails">
+  <div class="wrap">
+    <h2><span class="secnum">05</span>The 4 emails <span class="tag email">Brenda's copy, word for word</span></h2>
+    <p class="lede">Body copy, subjects, sender names, and timing are exactly as Brenda wrote them. The only change is one typo in Email 3 (“we bases” → “we base”). Preview text is our suggestion, using lines from her copy. Every phone number is tap-to-call on mobile, as Brenda asked. GoHighLevel adds the unsubscribe link.</p>
+
+    <div class="toolbar no-print">
+      <span class="legend"><span class="mf" title="merge field: patient first name">Margaret</span> = merge field: patient first name (sample name; fallback “there”)</span>
+      <label class="switch"><input type="checkbox" id="rawToggle"><span class="sl"></span>Show raw merge field</label>
+    </div>
+
+    <!-- Email 1 -->
+    <article class="email" id="email1">
+      <div class="email-top"><span class="lbl">Email 1 · Day 1</span><span>Warm check-in &amp; introduction</span></div>
+      <div class="inbox-cap">Inbox view</div>
+      <div class="inbox-row">
+        <div class="from">Pinto Chiropractic</div>
+        <div class="subj"><b>How has your back been feeling, <span class="mf" title="merge field: patient first name">Margaret</span>?</b> <span class="pv">— It's been a while since we've seen you, and we wanted to check in.</span></div>
+        <div class="time">Day 1</div>
+      </div>
+      <div class="msg-head">
+        <h3 class="msg-subject">How has your back been feeling, <span class="mf" title="merge field: patient first name">Margaret</span>?</h3>
+        <div class="sender"><div class="avatar">PC</div><div><div class="nm">Pinto Chiropractic</div><div class="ad">to <span class="mf" title="merge field: patient first name">Margaret</span> <span class="small">(merge field: patient first name)</span></div></div></div>
+        <div class="preview-line"><b>Preview text (suggested):</b> It's been a while since we've seen you, and we wanted to check in.</div>
+      </div>
+      <div class="msg-body">
+        <p>Hi <span class="mf" title="merge field: patient first name">Margaret</span>,</p>
+        <p>It's been a while since we've seen you for your DRX 9000c care, and we wanted to check in.</p>
+        <p>You put a great deal of time and effort into your original decompression program, and our goal is to help you continue benefiting from that progress over the long term.</p>
+        <p>That's why we recommend periodic DRX treatments after the initial program is completed.</p>
+        <p>We now refer to this ongoing stage as Phase 3 — Functional Longevity. It simply means continuing periodic care designed to help support the progress you've already made.</p>
+        <p>If it's been longer than recommended since your last DRX treatment, we'd like to see how you're doing and help you get back into the rhythm of your Phase 3 care.</p>
+        <p>Call Erin at <a href="tel:+17204856894">(720) 485-6894</a> and she'll find a time that works for you.</p>
+        <p class="sig">We'd love to see you again.<br>The Team at Pinto Chiropractic</p>
+      </div>
+      <div class="msg-foot">Pinto Chiropractic · 8501-D E. Arapahoe Road, Greenwood Village, CO 80112 · <a href="tel:+17204856894">(720) 485-6894</a><span class="unsub">Unsubscribe link added automatically by GoHighLevel</span></div>
+    </article>
+
+    <!-- Email 2 -->
+    <article class="email" id="email2">
+      <div class="email-top"><span class="lbl">Email 2 · Day 5</span><span>Dr. Pinto explains the clinical purpose</span></div>
+      <div class="inbox-cap">Inbox view</div>
+      <div class="inbox-row">
+        <div class="from">Glenn Pinto, D.C.</div>
+        <div class="subj"><b>A quick note from Dr. Pinto</b> <span class="pv">— You worked hard to make progress, and I want to help you preserve it.</span></div>
+        <div class="time">Day 5</div>
+      </div>
+      <div class="msg-head">
+        <h3 class="msg-subject">A quick note from Dr. Pinto</h3>
+        <div class="sender"><div class="avatar dr">GP</div><div><div class="nm">Glenn Pinto, D.C.</div><div class="ad">to <span class="mf" title="merge field: patient first name">Margaret</span> <span class="small">(merge field: patient first name)</span></div></div></div>
+        <div class="preview-line"><b>Preview text (suggested):</b> You worked hard to make progress, and I want to help you preserve it.</div>
+      </div>
+      <div class="msg-body">
+        <p>Hi <span class="mf" title="merge field: patient first name">Margaret</span>,</p>
+        <p>Dr. Pinto here.</p>
+        <p>When you completed your original DRX 9000c decompression program, the goal was never simply to finish a certain number of treatments and then forget about your spine.</p>
+        <p>You worked hard to make progress, and I want to help you preserve as much of that progress as possible.</p>
+        <p>That's why I recommend periodic DRX treatments after the initial program. I would much rather see you while you're doing well than wait until significant pain, stiffness, or limitations return.</p>
+        <p>We now call this stage of care Phase 3 — Functional Longevity.</p>
+        <p>Think of it as the long-term portion of your decompression care — periodic treatment based on how you're doing and what your spine needs over time.</p>
+        <p>If you've gotten away from your recommended visits, there's nothing complicated about getting started again. I'd simply like to see how you're doing now and help determine the appropriate timing for your ongoing care.</p>
+        <p>Call Erin at <a href="tel:+17204856894">(720) 485-6894</a> and she'll get you scheduled.</p>
+        <p class="sig">I look forward to seeing you,<br>Glenn Pinto, D.C.<br>Pinto Chiropractic</p>
+      </div>
+      <div class="msg-foot">Pinto Chiropractic · 8501-D E. Arapahoe Road, Greenwood Village, CO 80112 · <a href="tel:+17204856894">(720) 485-6894</a><span class="unsub">Unsubscribe link added automatically by GoHighLevel</span></div>
+    </article>
+
+    <!-- Email 3 -->
+    <article class="email" id="email3">
+      <div class="email-top"><span class="lbl">Email 3 · Day 11</span><span>For the “I feel fine” patient</span></div>
+      <div class="inbox-cap">Inbox view</div>
+      <div class="inbox-row">
+        <div class="from">Pinto Chiropractic</div>
+        <div class="subj"><b>Feeling good? That matters too.</b> <span class="pv">— If your back has been feeling good, we're very glad to hear that.</span></div>
+        <div class="time">Day 11</div>
+      </div>
+      <div class="msg-head">
+        <h3 class="msg-subject">Feeling good? That matters too.</h3>
+        <div class="sender"><div class="avatar">PC</div><div><div class="nm">Pinto Chiropractic</div><div class="ad">to <span class="mf" title="merge field: patient first name">Margaret</span> <span class="small">(merge field: patient first name)</span></div></div></div>
+        <div class="preview-line"><b>Preview text (suggested):</b> If your back has been feeling good, we're very glad to hear that.</div>
+      </div>
+      <div class="msg-body">
+        <p>Hi <span class="mf" title="merge field: patient first name">Margaret</span>,</p>
+        <p>If your back has been feeling good, we're very glad to hear that.</p>
+        <p>In fact, that's one of the reasons periodic DRX care can be so important.</p>
+        <p>The purpose of Phase 3 isn't to wait for your pain to become severe again. It's to continue supporting the progress you made during your original decompression program and help your spine function as well as possible over time.</p>
+        <p>Some patients need visits more frequently than others, which is why we base Phase 3 care on how you're doing, how you're moving, and what has changed since your last visit.</p>
+        <p>If it's been a while since we've seen you, this is a good time to reconnect and make sure your long-term care is still on track.</p>
+        <p>Call Erin at <a href="tel:+17204856894">(720) 485-6894</a> to schedule your next DRX visit.</p>
+        <p class="sig">We'd be happy to see you.<br>The Team at Pinto Chiropractic</p>
+      </div>
+      <div class="msg-foot">Pinto Chiropractic · 8501-D E. Arapahoe Road, Greenwood Village, CO 80112 · <a href="tel:+17204856894">(720) 485-6894</a><span class="unsub">Unsubscribe link added automatically by GoHighLevel</span></div>
+    </article>
+
+    <!-- Email 4 -->
+    <article class="email" id="email4">
+      <div class="email-top"><span class="lbl">Email 4 · Day 18</span><span>Personal final check-in, with no “last chance” urgency</span></div>
+      <div class="inbox-cap">Inbox view</div>
+      <div class="inbox-row">
+        <div class="from" title="Glenn Pinto, D.C. and the Team at Pinto Chiropractic">Glenn Pinto, D.C. and the Team at Pinto Chiropractic</div>
+        <div class="subj"><b><span class="mf" title="merge field: patient first name">Margaret</span>, one last check-in from Pinto Chiropractic</b> <span class="pv">— Your long-term success after DRX matters to us.</span></div>
+        <div class="time">Day 18</div>
+      </div>
+      <div class="msg-head">
+        <h3 class="msg-subject"><span class="mf" title="merge field: patient first name">Margaret</span>, one last check-in from Pinto Chiropractic</h3>
+        <div class="sender"><div class="avatar dr">GP</div><div><div class="nm">Glenn Pinto, D.C. and the Team at Pinto Chiropractic</div><div class="ad">to <span class="mf" title="merge field: patient first name">Margaret</span> <span class="small">(merge field: patient first name)</span></div></div></div>
+        <div class="preview-line"><b>Preview text (suggested):</b> Your long-term success after DRX matters to us.</div>
+      </div>
+      <div class="msg-body">
+        <p>Hi <span class="mf" title="merge field: patient first name">Margaret</span>,</p>
+        <p>We wanted to reach out one more time because your long-term success after DRX matters to us.</p>
+        <p>If you're doing well, that's wonderful — and we want to help you continue doing well.</p>
+        <p>If you've started noticing some familiar stiffness, discomfort, or changes in how your back feels, we'd especially like to see you before those symptoms become more significant.</p>
+        <p>Either way, if it's been longer than recommended since your last DRX treatment, we would like to reconnect with you and help you continue your Phase 3 — Functional Longevity care.</p>
+        <p>There's no need to wait until something is wrong.</p>
+        <p>Call Erin at <a href="tel:+17204856894">(720) 485-6894</a> and she'll take care of the scheduling.</p>
+        <p class="sig">We hope you're doing well and look forward to seeing you when the time is right.<br>Glenn Pinto, D.C.<br>and the Team at Pinto Chiropractic</p>
+      </div>
+      <div class="msg-foot">Pinto Chiropractic · 8501-D E. Arapahoe Road, Greenwood Village, CO 80112 · <a href="tel:+17204856894">(720) 485-6894</a><span class="unsub">Unsubscribe link added automatically by GoHighLevel</span></div>
+    </article>
+    <div class="callout warn">⚠ <b>Long sender name on Email 4.</b> “Glenn Pinto, D.C. and the Team at Pinto Chiropractic” may get cut off in some inboxes (see the inbox row above). We'll check it in the test send.</div>
+  </div>
+</section>
+
+<!-- 5. TEXTS -->
+<section id="texts">
+  <div class="wrap">
+    <h2><span class="secnum">06</span>The 2 texts <span class="tag new">New, for Brenda's review</span></h2>
+    <p class="lede">These go out from Pinto's <b>GoHighLevel texting number</b>, not the main office landline. Patients can reply right in the thread. Calls still go to Erin at the main number.</p>
+    <div class="sms-grid">
+      <div>
+        <div class="sms-title"><h3>Text 1 · Day 3</h3><span class="tag new">New</span></div>
+        <div class="phone"><div class="phone-screen">
+          <div class="phone-head"><div class="av">PC</div><div class="nm">Pinto Chiropractic</div><div class="nb">GoHighLevel texting number</div></div>
+          <div class="phone-body">
+            <div class="ts">Text Message · Day 3</div>
+            <div class="bubble" data-sms="Hi {{first name}}, it's the team at Pinto Chiropractic. We sent you a note about Phase 3, the periodic DRX care that helps protect the progress you made. Call Erin at (720) 485-6894 to schedule, or just reply here. Reply STOP to opt out.">Hi <span class="mf" title="merge field: patient first name">Margaret</span>, it's the team at Pinto Chiropractic. We sent you a note about Phase 3, the periodic DRX care that helps protect the progress you made. Call Erin at <a href="tel:+17204856894">(720) 485-6894</a> to schedule, or just reply here. Reply STOP to opt out.</div>
+          </div>
+        </div></div>
+        <div class="sms-meta"><span class="cc"></span></div>
+      </div>
+      <div>
+        <div class="sms-title"><h3>Text 2 · Day 14</h3><span class="tag new">New</span></div>
+        <div class="phone"><div class="phone-screen">
+          <div class="phone-head"><div class="av">PC</div><div class="nm">Pinto Chiropractic</div><div class="nb">GoHighLevel texting number</div></div>
+          <div class="phone-body">
+            <div class="ts">Text Message · Day 14</div>
+            <div class="bubble" data-sms="Hi {{first name}}, Pinto Chiropractic here. Feeling good? That's the best time to protect the progress you made with DRX. Call Erin at (720) 485-6894 to schedule your next DRX visit, or just reply here. Reply STOP to opt out.">Hi <span class="mf" title="merge field: patient first name">Margaret</span>, Pinto Chiropractic here. Feeling good? That's the best time to protect the progress you made with DRX. Call Erin at <a href="tel:+17204856894">(720) 485-6894</a> to schedule your next DRX visit, or just reply here. Reply STOP to opt out.</div>
+          </div>
+        </div></div>
+        <div class="sms-meta"><span class="cc"></span></div>
+      </div>
+    </div>
+    <div class="card" style="margin-top:24px">
+      <h3>Notes on the texts</h3>
+      <ul class="clean">
+        <li><b>Permission:</b> texts go only to patients who have text permission on file. Everyone else gets the emails only.</li>
+        <li><b>Replies:</b> Brenda monitors text replies in GoHighLevel. A reply also removes the patient from the sequence.</li>
+        <li><b>Texting number:</b> Pinto's GoHighLevel texting number is already set up, and its <b>A2P carrier registration is approved</b>. Texts are cleared to send.</li>
+        <li><b>Landline:</b> (720) 485-6894 is call-only. The texts ask patients to <i>call</i> Erin there, or to reply to the texting number.</li>
+        <li class="small muted">Character counts use the sample name “Margaret” and plain GSM-7 characters (straight apostrophes). Texts over 160 characters go out as 2 linked segments and show up as one message on most phones.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- 6. ERIN + TERMS -->
+<section id="erin">
+  <div class="wrap">
+    <h2><span class="secnum">07</span>Erin's phone language &amp; terminology <span class="tag email">Brenda's</span></h2>
+    <div class="grid2">
+      <div class="card">
+        <h3>Erin: suggested phone language</h3>
+        <p class="small muted" style="margin:0">Use the same language in the office that patients see in the emails. Don't call the emails a promotion, coupon, or special offer. Erin uses this when patients call in after an email or text, and on her follow-up calls.</p>
+        <div class="script">“Absolutely. Since you've already completed your initial DRX program, Dr. Pinto just wants to see how you're doing and help you continue with your Phase 3 care at the interval that makes sense for you.”</div>
+      </div>
+      <div class="card" style="padding:0;overflow:hidden">
+        <table class="t terms">
+          <thead><tr><th>✓ Prefer</th><th>✗ Use less / avoid</th></tr></thead>
+          <tbody>
+            <tr><td>Phase 3 care</td><td>Maintenance treatment</td></tr>
+            <tr><td>Functional Longevity care</td><td>Maintenance program</td></tr>
+            <tr><td>Periodic DRX care</td><td>Tune-up</td></tr>
+            <tr><td>Protect / support your progress</td><td>Get you back because your pain returned</td></tr>
+            <tr><td>Schedule your next DRX visit</td><td>Come in for another consultation</td></tr>
+            <tr><td>Long-term portion of your decompression care</td><td>Another treatment plan</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 7. CLAIM -->
+<section id="claim">
+  <div class="wrap">
+    <h2><span class="secnum">08</span>The Colorado DRX 9000c claim</h2>
+    <p class="lede">We checked the claim “Pinto Chiropractic is one of the few chiropractors in Colorado that have the DRX 9000c.” The research used public web sources only (Oct 7, 2026).</p>
+    <div class="callout info" style="margin-top:0;margin-bottom:20px">✅ <b>Kept out of these emails, per Brenda.</b> She asked us to avoid exclusivity claims unless they can be verified and substantiated. None of the 4 emails or 2 texts makes this claim.</div>
+    <div class="grid3">
+      <div class="stat"><div class="n">14</div><div class="l">Colorado locations publicly advertise a DRX9000-family table (all chiropractic-led)</div></div>
+      <div class="stat"><div class="n">3</div><div class="l">name the 9000C specifically: Pinto, Center for Spine (Lone Tree), and Baseline Chiropractic (Lafayette)</div></div>
+      <div class="stat"><div class="n">~2,343</div><div class="l">active chiropractor licenses with a Colorado address (DORA data), so DRX advertisers are well under 1%</div></div>
+    </div>
+    <div class="grid2" style="margin-top:20px">
+      <div class="card">
+        <h3>What this means</h3>
+        <ul class="clean small">
+          <li><b>“Few” is reasonable, but it can't be fully proven.</b> The maker, Excite Medical (Tampa, FL), bought the DRX rights from Axiom Worldwide in 2018. Excite publishes no list of owners, and its provider locator returns one location per emailed request.</li>
+          <li><b>“C” is the cervical (neck) attachment</b>, sold as an add-on or a combination system. It is not a newer table model. <b>Pinto has the DRX 9000C cervical attachment</b> (confirmed by Tim, Oct 8, 2026), so the “9000c” wording is accurate.</li>
+          <li>4 other clinics advertise neck treatment on a DRX without naming the 9000C, so exact rankings like “one of only 3” don't hold up.</li>
+          <li>DRX use in Colorado is growing (two clinics added one in 2026), so the claim should be rechecked from time to time.</li>
+          <li>No Colorado practice claims to be “the only” DRX provider.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Safer wording for posts &amp; ads</h3>
+        <ul class="wording small">
+          <li>“Pinto Chiropractic is one of a small number of Colorado chiropractic offices offering DRX9000® spinal decompression, including the DRX9000C cervical system for neck pain.”</li>
+          <li>“We offer DRX9000® True Non-Surgical Spinal Decompression®, an FDA-cleared system available at relatively few Colorado clinics, for both low back and neck (DRX9000C) conditions.”</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 style="margin-top:28px">Colorado practices publicly advertising a DRX 9000 / 9000C</h3>
+    <div class="tablewrap">
+      <table class="t">
+        <thead><tr><th>#</th><th>Practice</th><th>City</th><th>Model named</th><th>Source</th></tr></thead>
+        <tbody>
+          <tr class="hl"><td>1</td><td><b>Pinto Chiropractic Center</b></td><td>Greenwood Village</td><td class="y">DRX9000c</td><td><a class="src-url" href="https://pintochiropractic.com/services/spinal-decompression/" target="_blank" rel="noopener">pintochiropractic.com</a></td></tr>
+          <tr class="hl"><td>2</td><td><b>The Center for Spine, Sport &amp; Physical Medicine</b></td><td>Lone Tree</td><td class="y">DRX 9000 &amp; 9000c</td><td><a class="src-url" href="https://center4spine.com/how-we-help/drx-9000-spinal-decompression/" target="_blank" rel="noopener">center4spine.com</a> <span class="small muted">(page last modified 2018)</span></td></tr>
+          <tr class="hl"><td>3</td><td><b>Baseline Chiropractic &amp; Spinal Decompression Center</b></td><td>Lafayette</td><td class="y">DRX9000C</td><td><a class="src-url" href="https://drgoodbacknow.com/non-surgical-spinal-decompression.html" target="_blank" rel="noopener">drgoodbacknow.com</a></td></tr>
+          <tr><td>4</td><td>Hatch Chiropractic &amp; Wellness</td><td>Parker</td><td>DRX9000 (new in 2026)</td><td><a class="src-url" href="https://parkerchiropracticandacupuncture.com/decompression-therapy/" target="_blank" rel="noopener">parkerchiropracticandacupuncture.com</a></td></tr>
+          <tr><td>5</td><td>Switchback Chiropractic</td><td>Arvada</td><td>DRX 9000 (low back &amp; neck)</td><td><a class="src-url" href="https://switchbackchiro.com/spinal-decompression-drx-9000" target="_blank" rel="noopener">switchbackchiro.com</a></td></tr>
+          <tr><td>6</td><td>Genesis Back &amp; Neck – “Denver”</td><td>Arvada</td><td>DRX9000</td><td><a class="src-url" href="https://genesisback.com/locations/denver-co/" target="_blank" rel="noopener">genesisback.com</a></td></tr>
+          <tr><td>7</td><td>Genesis Back &amp; Neck – Loveland / Dawson Chiropractic</td><td>Loveland</td><td>DRX9000 (low back or neck)</td><td><a class="src-url" href="https://dawsonchiro.com/spinal-decompression-therapy-loveland-co/" target="_blank" rel="noopener">dawsonchiro.com</a></td></tr>
+          <tr><td>8</td><td>Applewood Chiropractic</td><td>Wheat Ridge</td><td>DRX-9000 (neck or low back)</td><td><a class="src-url" href="https://applewoodchiropractic.com/services/spinal-decompression/" target="_blank" rel="noopener">applewoodchiropractic.com</a></td></tr>
+          <tr><td>9</td><td>Johnston Chiropractic</td><td>Longmont</td><td>DRX9000</td><td><a class="src-url" href="https://johnston-chiropractic.com/services/drx9000/" target="_blank" rel="noopener">johnston-chiropractic.com</a></td></tr>
+          <tr><td>10</td><td>Impact Chiropractic</td><td>Fort Collins</td><td>DRX9000 (added Sept 2026)</td><td><a class="src-url" href="https://impact-chiropractic.com/spinal-decompression/" target="_blank" rel="noopener">impact-chiropractic.com</a></td></tr>
+          <tr><td>11</td><td>iMed Regeneration Center – DRX 9000</td><td>Colorado Springs</td><td>DRX9000</td><td><a class="src-url" href="https://springsdrx.com/" target="_blank" rel="noopener">springsdrx.com</a></td></tr>
+          <tr><td>12</td><td>Balance Chiropractic</td><td>Colorado Springs</td><td>DRX9000</td><td><a class="src-url" href="https://www.balancecolorado.com/spinal-decompression/" target="_blank" rel="noopener">balancecolorado.com</a></td></tr>
+          <tr><td>13</td><td>Colorado Spine &amp; Disc</td><td>Colorado Springs</td><td>DRX9000</td><td><a class="src-url" href="https://coloradospinedisc.com/" target="_blank" rel="noopener">coloradospinedisc.com</a></td></tr>
+          <tr><td>14</td><td>Durango Chiropractic</td><td>Durango</td><td>DRX9000</td><td><a class="src-url" href="https://durangochiropractic.com/services/decompression-therapy/" target="_blank" rel="noopener">durangochiropractic.com</a></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="small muted" style="margin-top:10px">Not counted: Tri Health Clinic (Aurora) has a DRX9000 info page, but its decompression page doesn't name the table. Search coverage was broad (about 30 queries) but not exhaustive. Sources: practice websites; Colorado DORA license data (data.colorado.gov), pulled Oct 7, 2026; <a href="https://excitemedical.com/the-drx9000c-cervical-attachment/" target="_blank" rel="noopener">Excite Medical: DRX9000C Cervical Attachment</a>.</p>
+    <div class="callout warn small">Also worth fixing on Pinto's website (separate from this campaign): drop “latest” from “latest DRX9000c units”; check the line saying the 2007 AAPM study used “the DRX9000c machine” (Excite's research pages say DRX9000); and make the address match (the About page says “8501 A” and the Contact page says “Unit D”).</div>
+  </div>
+</section>
+
+<!-- 8. DECISIONS -->
+<section id="decisions">
+  <div class="wrap">
+    <h2><span class="secnum">09</span>Decisions for today</h2>
+    <p class="lede">Choose Approved, Change, or Discuss for each item and add notes. Your choices are saved in this browser, so the page can be refreshed safely.</p>
+    <div class="dec-head">
+      <div class="progress"><span id="progText">0 of 12 decided</span><span class="bar"><i id="progBar"></i></span></div>
+      <div class="no-print" style="display:flex;gap:10px;flex-wrap:wrap">
+        <button class="btn" id="copyBtn" type="button">📋 Copy meeting notes</button>
+        <button class="btn ghost" type="button" onclick="window.print()">🖨 Print</button>
+        <button class="btn quiet" id="resetBtn" type="button">Reset</button>
+      </div>
+    </div>
+    <div id="decList"></div>
+  </div>
+</section>
+
+<!-- 9. NEXT -->
+<section id="next">
+  <div class="wrap">
+    <h2><span class="secnum">10</span>Next steps</h2>
+    <p class="lede">After today's approval:</p>
+    <ol class="steps">
+      <li><b>Build the workflow in GoHighLevel</b>Set up the 4 emails, 2 texts, Erin's call tasks (if kept), and the automatic removal when a patient replies or books.</li>
+      <li><b>Send test messages to Tim</b>Send a test of each email and each text to check the merge field, tap-to-call links, the long Email 4 sender name, and mobile display.</li>
+      <li><b>Pick the launch date</b>Launch once text permissions are confirmed and the test sends look good. The GHL texting number and A2P approval are already in place.</li>
+    </ol>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">Prepared by Mindful Edge for Pinto Chiropractic · Review draft, Oct 8, 2026 · Nothing has been built or sent. · Pinto Chiropractic · 8501-D E. Arapahoe Road, Greenwood Village, CO 80112 · <a href="tel:+17204856894">(720) 485-6894</a></div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  /* ---------- Timeline track ---------- */
+  var track=document.getElementById('track');
+  var pct=function(d){return ((d-1)/17*100)+'%';};
+  for(var d=1; d<=18; d++){
+    var t=document.createElement('div');t.className='tick';t.style.left=pct(d);track.appendChild(t);
+    if([1,3,5,11,14,18].indexOf(d)<0){var l=document.createElement('div');l.className='daylbl';l.style.left=pct(d);l.textContent=d;track.appendChild(l);}
+  }
+  [[1,'E1','e'],[3,'T1','t'],[5,'E2','e'],[11,'E3','e'],[14,'T2','t'],[18,'E4','e']].forEach(function(n){
+    var el=document.createElement('div');el.className='node '+n[2];el.style.left=pct(n[0]);el.textContent=n[1];el.title='Day '+n[0];track.appendChild(el);
+    var l=document.createElement('div');l.className='daylbl';l.style.left=pct(n[0]);l.style.fontWeight='700';l.style.color='#16394a';l.textContent='Day '+n[0];track.appendChild(l);
+  });
+
+  /* ---------- Merge field toggle ---------- */
+  var raw=document.getElementById('rawToggle');
+  function applyRaw(){
+    var on=raw.checked;document.body.classList.toggle('raw',on);
+    document.querySelectorAll('.mf').forEach(function(m){
+      m.textContent=on?'{{contact.first_name}}':'Margaret';
+    });
+  }
+  raw.addEventListener('change',applyRaw);
+
+  /* ---------- SMS character counts ---------- */
+  var GSM="@£$¥èéùìòÇ\nØø\rÅåΔ_ΦΓΛΩΠΨΣΘΞÆæßÉ !\"#¤%&'()*+,-./0123456789:;<=>?¡ABCDEFGHIJKLMNOPQRSTUVWXYZÄÖÑÜ§¿abcdefghijklmnopqrstuvwxyzäöñüà";
+  document.querySelectorAll('.bubble[data-sms]').forEach(function(b){
+    var tmpl=b.getAttribute('data-sms');
+    var s=tmpl.replace('{{first name}}','Margaret');
+    var gsm=[].every.call(s,function(c){return GSM.indexOf(c)>=0;});
+    var n=s.length, single=gsm?160:70, multi=gsm?153:67;
+    var seg=n<=single?1:Math.ceil(n/multi);
+    var meta=b.closest('.sms-grid > div').querySelector('.cc');
+    meta.innerHTML='<b>'+n+' characters</b> with “Margaret” ('+tmpl.length+' with the raw field) · '+(gsm?'GSM-7':'Unicode')+' · '+seg+' SMS segment'+(seg>1?'s':'');
+  });
+
+  /* ---------- Decisions ---------- */
+  var KEY='pinto-phase3-review-2026-10-08';
+  var items=[
+    {id:'e1',q:'Approve Email 1 copy',h:'Day 1 · from Pinto Chiropractic'},
+    {id:'e2',q:'Approve Email 2 copy',h:'Day 5 · from Glenn Pinto, D.C.'},
+    {id:'e3',q:'Approve Email 3 copy',h:'Day 11 · from Pinto Chiropractic'},
+    {id:'e4',q:'Approve Email 4 copy',h:'Day 18 · from Glenn Pinto, D.C. and the Team at Pinto Chiropractic'},
+    {id:'texts',q:'Approve adding the 2 texts',h:'Day 3 and Day 14, from the GHL texting number'},
+    {id:'perm',q:'Confirm text permission is on file for the list',h:'Texts go only to patients with permission'},
+    {id:'interval',q:'Recommended visit interval for “longer than recommended” (optional)',h:'Only if Dr. Pinto wants a specific number in the emails. The emails work as written without one.',extra:{type:'text',label:'Interval:',ph:'Dr. Pinto’s recommended interval'}},
+    {id:'from4',q:'OK with the long Email 4 sender name (check in test send)',h:'“Glenn Pinto, D.C. and the Team at Pinto Chiropractic”'},
+    {id:'reply',q:'OK for the texts to invite replies (“or just reply here”) alongside “Call Erin”?',h:'Brenda asked for one consistent CTA. Replies land in GoHighLevel, where Brenda watches them.'},
+    {id:'calls',q:'Keep Erin’s follow-up calls after Email 1 and Email 4?',h:'From the original plan, not in Brenda’s doc'},
+    {id:'cycle',q:'When should non-responders get the next periodic reactivation cycle?',h:'Brenda: only if clinically appropriate',extra:{type:'text',label:'Timing:',ph:'e.g. a few months out, or Dr. Pinto’s call'}},
+    {id:'launch',q:'Launch date',h:'After the test sends',extra:{type:'date',label:'Date:'}}
+  ];
+  var LBL={approved:'Approved',change:'Change',discuss:'Discuss'};
+  var state={};
+  try{state=JSON.parse(localStorage.getItem(KEY)||'{}')||{};}catch(e){state={};}
+  function save(){try{localStorage.setItem(KEY,JSON.stringify(state));}catch(e){}}
+  var list=document.getElementById('decList');
+  items.forEach(function(it,i){
+    var s=state[it.id]||(state[it.id]={status:'',notes:'',extra:''});
+    var div=document.createElement('div');div.className='dec';div.id='dec-'+it.id;
+    var html='<div class="dec-row"><div class="dec-q">'+(i+1)+'. '+it.q+'<span class="hint">'+it.h+'</span></div><div class="seg" role="group" aria-label="Decision">';
+    ['approved','change','discuss'].forEach(function(k){html+='<button type="button" class="'+k+'" data-k="'+k+'" aria-pressed="false">'+LBL[k]+'</button>';});
+    html+='</div></div>';
+    if(it.extra){html+='<div class="dec-extra"><label for="x-'+it.id+'"><b>'+it.extra.label+'</b></label><input id="x-'+it.id+'" type="'+it.extra.type+'"'+(it.extra.ph?' placeholder="'+it.extra.ph+'"':'')+'></div>';}
+    html+='<textarea aria-label="Notes for '+it.q.replace(/"/g,'&quot;')+'" placeholder="Notes…"></textarea><div class="print-notes"></div>';
+    div.innerHTML=html;list.appendChild(div);
+    var ta=div.querySelector('textarea'), pn=div.querySelector('.print-notes'), xi=div.querySelector('.dec-extra input');
+    function paint(){
+      div.className='dec'+(s.status?' s-'+s.status:'');
+      div.querySelectorAll('.seg button').forEach(function(b){b.setAttribute('aria-pressed',b.getAttribute('data-k')===s.status?'true':'false');});
+      pn.textContent=(xi&&s.extra?it.extra.label+' '+s.extra+(s.notes?'\n':''):'')+(s.notes||'');
+    }
+    ta.value=s.notes||''; if(xi) xi.value=s.extra||'';
+    div.querySelectorAll('.seg button').forEach(function(b){b.addEventListener('click',function(){var k=b.getAttribute('data-k');s.status=(s.status===k)?'':k;save();paint();prog();});});
+    ta.addEventListener('input',function(){s.notes=ta.value;save();paint();});
+    if(xi) xi.addEventListener('input',function(){s.extra=xi.value;save();paint();});
+    paint();
+  });
+  var total=items.length;
+  function prog(){
+    var n=items.filter(function(it){return state[it.id]&&state[it.id].status;}).length;
+    document.getElementById('progText').textContent=n+' of '+total+' decided';
+    document.getElementById('progBar').style.width=(n/total*100)+'%';
+  }
+  prog();
+
+  function summary(){
+    var lines=['Pinto Chiropractic · Phase 3 — Functional Longevity Reactivation Campaign','Meeting notes · Thu Oct 8, 2026 · Brenda (Pinto Chiropractic) & Tim Bennett (Mindful Edge)',''];
+    var counts={approved:0,change:0,discuss:0,open:0};
+    items.forEach(function(it,i){
+      var s=state[it.id]||{};
+      counts[s.status||'open']++;
+      lines.push((i+1)+'. '+it.q+': '+(s.status?LBL[s.status].toUpperCase():'(no decision yet)'));
+      if(it.extra&&s.extra) lines.push('   '+it.extra.label+' '+s.extra);
+      if(s.notes&&s.notes.trim()) s.notes.trim().split('\n').forEach(function(l){lines.push('   Notes: '+l);});
+    });
+    lines.push('','Summary: '+counts.approved+' approved, '+counts.change+' change, '+counts.discuss+' discuss, '+counts.open+' open.');
+    lines.push('Next steps: build the workflow in GoHighLevel → send a test of each email and text to Tim → pick the launch date.');
+    return lines.join('\n');
+  }
+  function toast(msg){var t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');setTimeout(function(){t.classList.remove('show');},2200);}
+  function fallbackCopy(txt){
+    var ta=document.createElement('textarea');ta.value=txt;ta.style.position='fixed';ta.style.opacity='0';document.body.appendChild(ta);ta.select();
+    var ok=false;try{ok=document.execCommand('copy');}catch(e){}
+    document.body.removeChild(ta);return ok;
+  }
+  document.getElementById('copyBtn').addEventListener('click',function(){
+    var txt=summary();
+    if(navigator.clipboard&&window.isSecureContext){
+      navigator.clipboard.writeText(txt).then(function(){toast('Meeting notes copied to clipboard');},function(){toast(fallbackCopy(txt)?'Meeting notes copied to clipboard':'Copy failed. Please select and copy manually.');});
+    } else { toast(fallbackCopy(txt)?'Meeting notes copied to clipboard':'Copy failed. Please select and copy manually.'); }
+  });
+  document.getElementById('resetBtn').addEventListener('click',function(){
+    if(confirm('Clear all decisions and notes on this computer?')){localStorage.removeItem(KEY);location.reload();}
+  });
+
+  /* ---------- Active nav ---------- */
+  var links=[].slice.call(document.querySelectorAll('nav.secnav a'));
+  var map={};links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a;});
+  if('IntersectionObserver' in window){
+    var obs=new IntersectionObserver(function(es){
+      es.forEach(function(e){if(e.isIntersecting){links.forEach(function(a){a.classList.remove('active');});var a=map[e.target.id];if(a){a.classList.add('active');var c=a.parentNode;if(a.offsetLeft<c.scrollLeft||a.offsetLeft+a.offsetWidth>c.scrollLeft+c.clientWidth){c.scrollLeft=a.offsetLeft-20;}}}});
+    },{rootMargin:'-40% 0px -55% 0px'});
+    document.querySelectorAll('main section[id]').forEach(function(s){obs.observe(s);});
+  }
+})();
+</script>
+</body>
+</html>
