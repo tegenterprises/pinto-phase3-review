@@ -271,6 +271,7 @@ footer.foot{margin-top:50px;padding:26px 0 40px;border-top:1px solid var(--line)
     <a href="#claim">Colorado Claim</a>
     <a href="#decisions">Decisions</a>
     <a href="#next">Next Steps</a>
+    <a href="#funnel">Facebook Funnel <span class="tag new" style="font-size:10px;padding:1px 5px;margin-left:2px">New</span></a>
   </div>
 </nav>
 
@@ -632,7 +633,7 @@ footer.foot{margin-top:50px;padding:26px 0 40px;border-top:1px solid var(--line)
     <h2><span class="secnum">09</span>Decisions for today</h2>
     <p class="lede">Choose Approved, Change, or Discuss for each item and add notes. Your choices are saved in this browser, so the page can be refreshed safely.</p>
     <div class="dec-head">
-      <div class="progress"><span id="progText">0 of 12 decided</span><span class="bar"><i id="progBar"></i></span></div>
+      <div class="progress"><span id="progText">0 of 16 decided</span><span class="bar"><i id="progBar"></i></span></div>
       <div class="no-print" style="display:flex;gap:10px;flex-wrap:wrap">
         <button class="btn" id="copyBtn" type="button">📋 Copy meeting notes</button>
         <button class="btn ghost" type="button" onclick="window.print()">🖨 Print</button>
@@ -653,6 +654,61 @@ footer.foot{margin-top:50px;padding:26px 0 40px;border-top:1px solid var(--line)
       <li><b>Send test messages to Tim</b>Send a test of each email and each text to check the merge field, tap-to-call links, the long Email 4 sender name, and mobile display.</li>
       <li><b>Pick the launch date</b>Launch once text permissions are confirmed and the test sends look good. The GHL texting number and A2P approval are already in place.</li>
     </ol>
+  </div>
+</section>
+
+<!-- 11. FUNNEL RELAUNCH -->
+<section id="funnel">
+  <div class="wrap">
+    <h2><span class="secnum">11</span>Facebook ads &amp; Free Spinal Consultation page: status and relaunch plan <span class="tag new">New</span></h2>
+    <p class="lede">Separate from Phase 3. This covers the Facebook ads that send new patients to <a href="https://relief.pintochiropractic.com/" target="_blank" rel="noopener">relief.pintochiropractic.com</a>. Data pulled Oct 8, 2026. Nothing has been changed, launched, or spent.</p>
+
+    <h3>Where things stand</h3>
+    <div class="grid3">
+      <div class="stat"><div class="n">$609</div><div class="l">spent on the $15/day “Free Spinal Consultation” ad (July 13 to Aug 23, now paused): 1,305 clicks and 1,184 visits to the page</div></div>
+      <div class="stat"><div class="n">0</div><div class="l">leads <i>measured</i>. The page couldn't report form fills to Facebook, so this means “not tracked,” not “none”</div></div>
+      <div class="stat"><div class="n">$5/day</div><div class="l">“Call Now” ad still running Mon–Thu in office hours: 6 calls in the last 30 days, none longer than 20 seconds</div></div>
+    </div>
+    <div class="grid2" style="margin-top:20px">
+      <div class="card">
+        <h3>What the numbers showed</h3>
+        <ul class="clean small">
+          <li>About 88% of the $15/day budget went to Instagram Reels, using a square still image that isn't made for that format.</li>
+          <li>People 25 to 44 used about a third of the budget and almost never engaged. Patients 65+ did most of the engaging.</li>
+          <li>Over the last few weeks, clicks got pricier and less frequent, so the ad was wearing out.</li>
+          <li>For the call ad, 13 of its 16 lifetime calls came from people 65+. Instagram Stories used $83 and produced no calls.</li>
+          <li>Neither the ads nor the page mention neck pain, even though Pinto has the DRX 9000C cervical attachment.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>The tracking problem</h3>
+        <ul class="clean small">
+          <li>The Facebook pixel ID was pasted into the page as a bare number, without the actual tracking code, so the page reports nothing to Facebook.</li>
+          <li>On the main website, the pixel records page views only.</li>
+          <li>The ad account isn't connected to Pinto's Facebook Business or its pixel, so even a working pixel wouldn't feed the ads.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 style="margin-top:28px">Relaunch plan</h3>
+    <ol class="steps">
+      <li><b>Fix the pixel</b>Install the full Facebook pixel code on the relief page in GoHighLevel, add a thank-you page so every form fill counts as a lead, and connect the pixel to the ad account. Then confirm in Facebook that visits and leads are actually recording. No cost.</li>
+      <li><b>Update the relief page</b>Add a tap-to-call button that stays on screen while scrolling, move a short two-field form (name and phone) to the top, add a simple thank-you message, and remove cure or guaranteed-result language. No cost.</li>
+      <li><b>New $15/day lead campaign (draft for approval)</b>Leave the July ad off and build a new campaign with the goal of getting leads, at $15/day for a 7-day test. Facebook can't switch an old campaign's goal, so it has to be new. Ages 45 to 65+, about 15 miles around the office, mostly Facebook placements. Two new vertical videos of Dr. Pinto and the DRX 9000C, including the neck attachment. No “clinically proven,” “heal naturally,” or outcome promises. It stays as a draft until approved.</li>
+      <li><b>Decide on the $5/day call ad</b>It hasn't produced a call longer than 20 seconds since Sept 7. Options: pause it until calls can be tracked, or keep it running for ages 45+ only, without Instagram Stories.</li>
+      <li><b>Report after 7 days</b>Cost per lead, how many leads Bri reached, and how many consultations were booked. Then decide whether to keep going, adjust, or scale up.</li>
+    </ol>
+
+    <div class="card" style="margin-top:24px">
+      <h3>Lead handling: Bri</h3>
+      <ul class="clean small">
+        <li><b>Bri takes all new form leads</b> from the relief page and the Facebook lead form, and makes the callback calls.</li>
+        <li>GoHighLevel alerts Bri (text and email) the moment a lead comes in and creates a call task for her. The lead gets an automatic text and email right away confirming the request and saying Pinto will call shortly.</li>
+        <li>Proposed: Bri calls new leads the same business day, and follows up next day if she can't reach them. The lead is removed from follow-up once a consultation is booked.</li>
+        <li>Erin still answers incoming calls to the office line at <a href="tel:+17204856894">(720) 485-6894</a>.</li>
+        <li>Bri logs each outcome in GoHighLevel (reached, booked, not interested, no answer) so the 7-day report shows real bookings, not just clicks.</li>
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -714,7 +770,11 @@ footer.foot{margin-top:50px;padding:26px 0 40px;border-top:1px solid var(--line)
     {id:'reply',q:'OK for the texts to invite replies (“or just reply here”) alongside “Call Erin”?',h:'Brenda asked for one consistent CTA. Replies land in GoHighLevel, where Brenda watches them.'},
     {id:'calls',q:'Keep Bri’s follow-up calls after Email 1 and Email 4?',h:'From the original plan, not in Brenda’s doc'},
     {id:'cycle',q:'When should non-responders get the next periodic reactivation cycle?',h:'Brenda: only if clinically appropriate',extra:{type:'text',label:'Timing:',ph:'e.g. a few months out, or Dr. Pinto’s call'}},
-    {id:'launch',q:'Launch date',h:'After the test sends',extra:{type:'date',label:'Date:'}}
+    {id:'launch',q:'Launch date',h:'After the test sends',extra:{type:'date',label:'Date:'}},
+    {id:'fb-pixel',q:'Facebook funnel: OK to fix the pixel and update the relief page?',h:'Section 11, steps 1 and 2. No cost.'},
+    {id:'fb-campaign',q:'Facebook funnel: approve the new $15/day lead campaign draft for a 7-day test?',h:'Section 11, step 3. Nothing goes live until approved.'},
+    {id:'fb-callad',q:'Facebook funnel: the $5/day call ad',h:'Pause it, or keep it running for ages 45+ only without Instagram Stories',extra:{type:'text',label:'Choice:',ph:'Pause / Narrow to 45+'}},
+    {id:'fb-bri',q:'Facebook funnel: Bri takes new leads and does callbacks (same business day)',h:'Section 11, lead handling'}
   ];
   var LBL={approved:'Approved',change:'Change',discuss:'Discuss'};
   var state={};
